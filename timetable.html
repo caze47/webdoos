@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timetable Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- nav bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/dubo.png" alt="logo">
+        DuBo Martial Arts
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link active" href="timetable.html">Timetable</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- hero image - single image and not slideshow like in index -->
+  <header class="hero">
+    <div class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/boxers.png" class="d-block w-100" alt="martial arts class timetable">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Class Timetable</h1>
+            <p>Find Your Perfect Training Schedule!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- main page content -->
+  <main>
+    <section class="timetable-section py-5">
+      <div class="container">
+        <div class="timetable-header text-center mb-5">
+          <h2>Weekly Class Schedule</h2>
+          <p class="lead">All Available Classes And Training Sessions</p>
+        </div>
+
+        <!-- timetable -->
+        <div class="timetable-container table-responsive">
+          <table class="timetable table table-bordered">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- 6:00-7:30 -->
+              <tr class="judo jiu-jitsu karate muay-thai">
+                <td>06:00-07:30</td>
+                <td><span class="class-type">Jiu-Jitsu</span></td>
+                <td><span class="class-type">Karate</span></td>
+                <td><span class="class-type">Judo</span></td>
+                <td><span class="class-type">Jiu-Jitsu</span></td>
+                <td><span class="class-type">Muay Thai</span></td>
+                <td><span class="not-available">N/A</span></td>
+                <td><span class="not-available">N/A</span></td>
+              </tr>
+              
+              <!-- 8:00-10:00 -->
+              <tr class="muay-thai private">
+                <td>08:00-10:00</td>
+                <td><span class="class-type">Muay Thai</span></td>
+                <td><span class="class-type">Private Tuition</span></td>
+                <td><span class="class-type">Private Tuition</span></td>
+                <td><span class="class-type">Private Tuition</span></td>
+                <td><span class="not-available">N/A</span></td>
+                <td><span class="class-type">Private Tuition</span></td>
+                <td><span class="class-type">Private Tuition</span></td>
+              </tr>
+              
+              <!-- 10:30-12:00 -->
+              <tr class="private">
+                <td>10:30-12:00</td>
+                <td><span class="class-type">Private Tuition</span></td>
+                <td><span class="class-type">Private Tuition</span></td>
+                <td><span class="class-type">Private Tuition</span></td>
+                <td><span class="class-type">Private Tuition</span></td>
+                <td><span class="class-type">Private Tuition</span></td>
+                <td><span class="class-type">Judo</span></td>
+                <td><span class="class-type">Karate</span></td>
+              </tr>
+              
+              <!-- 13:00-14:30 -->
+              <tr class="open">
+                <td>13:00-14:30</td>
+                <td><span class="class-type">Open Mat/Personal Practice</span></td>
+                <td><span class="class-type">Open Mat/Personal Practice</span></td>
+                <td><span class="class-type">Open Mat/Personal Practice</span></td>
+                <td><span class="class-type">Open Mat/Personal Practice</span></td>
+                <td><span class="class-type">Open Mat/Personal Practice</span></td>
+                <td><span class="class-type">Karate</span></td>
+                <td><span class="class-type">Judo</span></td>
+              </tr>
+              
+              <!-- 15:00-17:00 -->
+              <tr class="kids">
+                <td>15:00-17:00</td>
+                <td><span class="class-type">Kids Jiu-Jitsu</span></td>
+                <td><span class="class-type">Kids Judo</span></td>
+                <td><span class="class-type">Kids Karate</span></td>
+                <td><span class="class-type">Kids Jiu-Jitsu</span></td>
+                <td><span class="class-type">Kids Judo</span></td>
+                <td><span class="class-type">Muay Thai</span></td>
+                <td><span class="class-type">Jiu-Jitsu</span></td>
+              </tr>
+              
+              <!-- 17:30-19:00 -->
+              <tr class="judo jiu-jitsu karate muay-thai">
+                <td>17:30-19:00</td>
+                <td><span class="class-type">Karate</span></td>
+                <td><span class="class-type">Muay Thai</span></td>
+                <td><span class="class-type">Judo</span></td>
+                <td><span class="class-type">Jiu-Jitsu</span></td>
+                <td><span class="class-type">Muay Thai</span></td>
+                <td><span class="not-available">N/A</span></td>
+                <td><span class="not-available">N/A</span></td>
+              </tr>
+              
+              <!-- 19:00-21:00 -->
+              <tr class="judo jiu-jitsu karate private">
+                <td>19:00-21:00</td>
+                <td><span class="class-type">Jiu-Jitsu</span></td>
+                <td><span class="class-type">Judo</span></td>
+                <td><span class="class-type">Jiu-Jitsu</span></td>
+                <td><span class="class-type">Karate</span></td>
+                <td><span class="class-type">Private Tuition</span></td>
+                <td><span class="not-available">N/A</span></td>
+                <td><span class="not-available">N/A</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+<!-- footer -->
+<footer class="footer">
+  <div class="social-media-container">
+    <p class="social-media-message">Stay Up To Date With Us On Social Media</p>
+    <div class="social-media-icons">
+      <a href="https://x.com/newcitycol" target="_blank" rel="noopener noreferrer">
+        <img src="images/sm/x.png" alt="twitter">
+      </a>
+      <a href="https://www.instagram.com/newcitycollege_tower/" target="_blank" rel="noopener noreferrer">
+        <img src="images/sm/instagram.png" alt="instagram">
+      </a>
+      <a href="https://www.tiktok.com/@newcitycollegegroup" target="_blank" rel="noopener noreferrer">
+        <img src="images/sm/tiktok.png" alt="tikTok">
+      </a>
+    </div>
+  </div>
+  <div class="footer-content">
+    <p>© 2025 DuBo Martial Arts. All Rights Reserved.</p>
+  </div>
+</footer>

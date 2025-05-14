@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- nav bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/dubo.png" alt="logo">
+        DuBo Martial Arts
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="timetable.html">Timetable</a></li>
+          <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- image gallery heading and slideshow -->
+  <main class="gallery-main">
+    <section class="container py-5">
+      <!-- gallery header -->
+      <div class="row mb-4">
+        <div class="col-12 text-center">
+          <h2 class="gallery-heading">a typical session at our club...</h2>
+        </div>
+      </div>
+
+      <!-- image slideshow -->
+      <div class="gallery-slideshow">
+        <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- slideshow image 1 -->
+            <div class="carousel-item active">
+              <img src="images/boxers.png" class="d-block w-100" alt="training session">
+            </div>
+            <!-- slideshow image 2 -->
+            <div class="carousel-item">
+              <img src="images/jiujitsu.png" class="d-block w-100" alt="jiu jitsu">
+            </div>
+            <!-- slideshow image 3 -->
+            <div class="carousel-item">
+              <img src="images/kidsjudo.png" class="d-block w-100" alt="kids judo">
+            </div>
+          </div>
+          <!-- carousel controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+
+<!-- footer -->
+<footer class="footer">
+  <div class="social-media-container">
+    <p class="social-media-message">Stay Up To Date With Us On Social Media</p>
+    <div class="social-media-icons">
+      <a href="https://x.com/newcitycol" target="_blank" rel="noopener noreferrer">
+        <img src="images/sm/x.png" alt="twitter">
+      </a>
+      <a href="https://www.instagram.com/newcitycollege_tower/" target="_blank" rel="noopener noreferrer">
+        <img src="images/sm/instagram.png" alt="instagram">
+      </a>
+      <a href="https://www.tiktok.com/@newcitycollegegroup" target="_blank" rel="noopener noreferrer">
+        <img src="images/sm/tiktok.png" alt="tikTok">
+      </a>
+    </div>
+  </div>
+  <div class="footer-content">
+    <p>© 2025 DuBo Martial Arts. All Rights Reserved.</p>
+  </div>
+</footer>
