@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- nav bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/dubo.png" alt="logo">
+        DuBo Martial Arts
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="timetable.html">Timetable</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- hero image -->
+  <header class="hero">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/jiujitsu.png" class="d-block w-100" alt="jiu jitsu">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Strength. Discipline. Respect.</h1>
+            <p>Train With Elite Instructors At DuBo</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/kidsjudo.png" class="d-block w-100" alt="judo">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Learn From The Best</h1>
+            <p>Classes For Kids, Beginners, And Competitors</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/karate.png" class="d-block w-100" alt="karate">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Modern Training Facilities</h1>
+            <p>With Strength, Conditioning Rooms, And More!</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+
+
+  <!-- about section -->
+  <section class="section text-center">
+    <div class="container">
+      <h2>What We Offer</h2>
+      <p class="lead">Classes In Judo, Jiu-Jitsu, Karate, Muay Thai, For All Levels. Kids Welcome!</p>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <img src="images/boxers.png" alt="Gym training" class="img-fluid rounded shadow-sm">
+        </div>
+        <div class="col-md-6 text-start">
+          <h3>Why Train With Us?</h3>
+          <ul>
+            <li>Expert Instructors With National & International Experience</li>
+            <li>Inclusive And Welcoming Environment</li>
+            <li>Flexible Membership Options</li>
+            <li>Modern Facilities with Strength And Conditioning Rooms</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- booking form -->
+  <section class="section bg-light" id="booking">
+    <div class="container">
+      <h2 class="text-center">Book A Free Trial Class Today!</h2>
+      <form id="bookingForm" class="booking-form mt-4">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="fullName" class="form-label">Enter Your Full Name</label>
+            <input type="text" class="form-control" id="fullName" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="email" class="form-label">Enter Your Email</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="phone" class="form-label">Enter Your Phone Number</label>
+            <input type="tel" class="form-control" id="phone">
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="classType" class="form-label">Enter Your Class Type</label>
+            <select class="form-select" id="classType" required>
+              <option value="">Choose A Class</option>
+              <option value="Judo">Judo</option>
+              <option value="Jiu-jitsu">Jiu-Jitsu</option>
+              <option value="Karate">Karate</option>
+              <option value="Muay Thai">Muay Thai</option>
+            </select>
+          </div>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-danger btn-lg">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+<!-- footer -->
+<footer class="footer">
+  <div class="social-media-container">
+    <p class="social-media-message">Stay Up To Date With Us On Social Media</p>
+    <div class="social-media-icons">
+      <a href="https://x.com/newcitycol" target="_blank" rel="noopener noreferrer">
+        <img src="images/sm/x.png" alt="twitter">
+      </a>
+      <a href="https://www.instagram.com/newcitycollege_tower/" target="_blank" rel="noopener noreferrer">
+        <img src="images/sm/instagram.png" alt="instagram">
+      </a>
+      <a href="https://www.tiktok.com/@newcitycollegegroup" target="_blank" rel="noopener noreferrer">
+        <img src="images/sm/tiktok.png" alt="tikTok">
+      </a>
+    </div>
+  </div>
+  <div class="footer-content">
+    <p>© 2025 DuBo Martial Arts. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
+</html>
